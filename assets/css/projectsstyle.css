@@ -9,7 +9,19 @@
 }
 
 body {
-    background: #ecececdb;
+    background-image: url("../images/bacck.jpeg");
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 40px auto;
+}
+h1{
+    text-align: center;
+    font-family: "Abyssinica SIL",sans-serif;
+    color-rendering: optimizeQuality;
+    color: #2eda2e;
+    font-size: xx-large;
+    font-weight: bold;
 }
 header {
   position: sticky;
@@ -18,6 +30,21 @@ header {
   width: 100%;
   z-index: 1;
   padding: 20px;
+}
+.menu-links{
+  overflow: hidden;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.navbar .menu-links li a:hover {
+  background-color: #ddd;
+  color: black;
 }
 header .navbar {
   max-width: 1280px;
@@ -33,10 +60,15 @@ header .navbar {
   gap: 30px;
 }
 .navbar .menu-links li a {
-  color: darkgreen;
+  color: #ffffff;
   font-weight: 500;
   text-decoration: none;
   transition: 0.2s ease;
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 10px 10px;
+  margin-top: 2px;
 }
 .navbar .menu-links .language-item a {
   display: flex;
@@ -46,20 +78,27 @@ header .navbar {
 .navbar .menu-links .language-item span {
   font-size: 1.3rem;
 }
-.navbar .menu-links li a:hover {
-  color: gold;
+.search-container {
+  float: right;
+  margin-top: 10px;
+  margin-right: 20px;
 }
-.navbar .menu-links .join-btn a {
-  border: 1px solid #fff;
-  padding: 8px 15px;
-  border-radius: 4px;
+.search-container input[type=text] {
+  padding: 14px 16px;
+  border: solid 1px chartreuse;
+  font-size: 17px;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 0;
+        }
+.search-container button {
+  padding: 14px 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  text-align: center;
 }
-.navbar .menu-links .join-btn a:hover {
-  color: #fff;
-  border-color: transparent;
-  background: #1dbf73;
-}
-
 .card-list {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -209,4 +248,21 @@ header .navbar {
     .card-list {
         margin: 0 auto;
     }
-}
+}}
+header {
+            padding: 4px;
+            color: #1db01d;
+            text-align: center;
+        }
+ .footer {
+   color: #fff;
+   text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+        }
+
+.footer p {
+    margin: 5px 0;
+        }

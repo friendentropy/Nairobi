@@ -222,3 +222,14 @@ header .navbar {
     display: none;
   }
 }
+.footer {
+  color: #1db01d;
+  text-align: left;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+.footer p {
+   margin: 5px 0;
+}
